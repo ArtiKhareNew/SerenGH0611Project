@@ -8,10 +8,26 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: MultiplyPublicService
+  version: "6.0"
   gitServerName: srcCtrl_shared_bitbucket_Arti
   gitUrl: https://bitbucket.org/testartiibm
   gitUsername: artikhare
   gitBranch: master
+services:
+- serviceName: project.serengh0611.integrations:bitbucketfs
+  packages:
+  - name: SerenGH0611Project
+    version: "1.0"
+  - name: MultiplyPublicService
+    version: "6.0"
+- serviceName: MultiplyPublicService:multiply_svc
+  packages:
+  - name: MultiplyPublicService
+    version: "6.0"
+- serviceName: pub.math:multiplyInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1328
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
