@@ -38,6 +38,10 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.1338
+- serviceName: pub.xml:xmlNodeToDocument
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1338
 - serviceName: project.serengh0611.streaming.connections:EmbeddedMessaging
   packages:
   - name: SerenGH0611Project
