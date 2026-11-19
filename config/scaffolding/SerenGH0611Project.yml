@@ -27,7 +27,23 @@ services:
 - serviceName: pub.math:multiplyInts
   packages:
   - name: WmPublic
-    version: 12.1.0.0.1328
+    version: 12.1.0.0.1338
+- serviceName: project.serengh0611.integrations:dd
+  packages:
+  - name: SerenGH0611Project
+    version: "1.0"
+  - name: MultiplyPublicService
+    version: "6.0"
+- serviceName: pub.xml:loadXMLNode
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1338
+- serviceName: project.serengh0611.streaming.connections:EmbeddedMessaging
+  packages:
+  - name: SerenGH0611Project
+    version: "1.0"
+  - name: MultiplyPublicService
+    version: "6.0"
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
